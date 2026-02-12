@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+    <center>
+        <h2>Login</h2>
+
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <button onclick="checkPassword()">Login</button>
+
+        <p id="message"></p>
+
+        <script>
+            let attempts = 0;
+            const maxAttempts = 3;
+            const correctPassword = "1234"; // 🔐 Change this
+
+            function checkPassword() {
+                const enteredPassword = document.getElementById("password").value;
+                const message = document.getElementById("message");
+
+                if (enteredPassword === correctPassword) {
+                    window.location.href = "home.html"; // Go to next page
+                } else {
+                    attempts++;
+                    if (attempts >= maxAttempts) {
+                        message.style.color = "red";
+                        message.innerText = "Maximum attempts reached. Try again later.";
+                        document.querySelector("button").disabled = true;
+                    } else {
+                        message.style.color = "red";
+                        message.innerText = `Wrong password! Attempts left: ${maxAttempts - attempts}`;
+                    }
+                }
+            }
+        </script>
+    </center>
+</body>
+
+</html>

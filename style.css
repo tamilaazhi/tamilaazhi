@@ -1,0 +1,37 @@
+    h1 {
+        text-align: center;
+        background-color: rgb(104, 255, 0);
+        padding: 50px;
+    }
+    
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    Input {
+        Display: none;
+    }
+    
+    Label {
+        Height: 100px;
+        Width: 150px;
+        Border-radius: 60px;
+        Border: 1px dashed #999;
+    }
+    
+    Label:hover {
+        Color: #de0611;
+        Border: 1px dashed #de0611;
+    }
+    
+    button {
+        color: white;
+        background-color: rgb(58, 94, 255);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        display:
+    }
